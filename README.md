@@ -209,3 +209,18 @@ config/database.yml
 ```
 config/database.yml.example
 ```
+
+## 不要留下暴露破解的接口
+
+例如： 验证密码API，一定不要随便就让人访问. 要加上：
+1. google两步验证
+2. 极验（鼠标拖拽验证）
+3. 图片
+
+## 要使用 WAF
+
+淘宝或者AWS等云服务商都提供
+
+国内也有独立的WAF， 例如知道创宇。
+
+
